@@ -50,8 +50,6 @@ const aboutButton = document.querySelector('.header__menu-about');
 const aboutSection = document.querySelector('.about');
 const portfolioButton = document.querySelector('.header__menu-portfolio');
 const portfolioSection = document.querySelector('.portfolio');
-const reviewsButton = document.querySelector('.header__menu-reviews');
-const reviewsSection = document.querySelector('.reviews');
 const contactsButton = document.querySelector('.header__menu-contacts'); 
 const contactsSection = document.querySelector('.contacts'); 
 const btnContacts = document.querySelectorAll('.main-sreen__btn')
@@ -83,12 +81,7 @@ portfolioButton.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
-reviewsButton.addEventListener('click', () => {
-  reviewsSection.scrollIntoView({ 
-    block: "center",
-    behavior: 'smooth',
-  });
-});
+
 contactsButton.addEventListener('click', () => {
   contactsSection.scrollIntoView({ 
     block: "center",
@@ -103,3 +96,15 @@ const menu = document.querySelector('.header__menu-items');
 burger.addEventListener('click', () => {
   menu.classList.toggle('active')
 })
+
+
+
+// const reviewsButton = document.querySelector('.header__menu-reviews');
+// const reviewsSection = document.querySelector('.reviews');
+
+// reviewsButton.addEventListener('click', () => {
+//   reviewsSection.scrollIntoView({ 
+//     block: "center",
+//     behavior: 'smooth',
+//   });
+// });
